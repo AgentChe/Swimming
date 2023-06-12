@@ -8,11 +8,11 @@
 import UIKit
 
 struct Appearance {
-    static let background = UIColor(integralRed: 9, green: 9, blue: 9)
-    static let primary = UIColor(integralRed: 251, green: 18, blue: 2)
-    static let secondary = UIColor(integralRed: 75, green: 166, blue: 123)
-    static let third = UIColor(integralRed: 53, green: 104, blue: 220)
-    static let fourth = UIColor(integralRed: 238, green: 127, blue: 52)
+    static let background = UIColor(integralRed: 24, green: 24, blue: 40)
+    static let primary = UIColor(integralRed: 10, green: 203, blue: 236)
+    static let secondary = UIColor(integralRed: 36, green: 62, blue: 227)
+    static let third = UIColor(integralRed: 233, green: 24, blue: 27)
+    static let fourth = UIColor(integralRed: 89, green: 0, blue: 235)
     static let white = UIColor.white
-    static let black = UIColor(integralRed: 34, green: 34, blue: 33)
+    static let black = UIColor(integralRed: 36, green: 36, blue: 51)
 }

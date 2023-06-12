@@ -38,7 +38,15 @@ private extension OSkillLevelScoreView {
     func update() {
         let (marked, target) = marked
         
-        scoreView.backgroundColor = marked ? Appearance.secondary : Appearance.white.withAlphaComponent(0.1)
+        let markedColors = [
+            UIColor(integralRed: 114, green: 131, blue: 255).cgColor,
+            UIColor(integralRed: 36, green: 62, blue: 227).cgColor
+        ]
+        let unmarkedColors = [
+            Appearance.white.withAlphaComponent(0.1).cgColor,
+            Appearance.white.withAlphaComponent(0.1).cgColor
+        ]
+        scoreView.gradientLayer.colors = marked ? markedColors : unmarkedColors
         
         scoreView.layer.borderWidth = marked ? 0 : 1.scale
         scoreView.layer.borderColor = marked ? UIColor.clear.cgColor : Appearance.white.withAlphaComponent(0.1).cgColor
@@ -66,8 +74,10 @@ private extension OSkillLevelScoreView {
 
 // MARK: Lazy initialization
 private extension OSkillLevelScoreView {
-    func makeScoreView() -> UIView {
-        let view = UIView()
+    func makeScoreView() -> GradientView {
+        let view = GradientView()
+        view.gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
+        view.gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
         view.layer.cornerRadius = 10.scale
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)

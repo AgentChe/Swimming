@@ -33,7 +33,7 @@ final class DailyPicksCollectionCell: UICollectionViewCell {
         .lineHeight(14.4.scale)
         .textAlignment(.center)
     private lazy var actionAttrs = TextAttributes()
-        .textColor(Appearance.white)
+        .textColor(Appearance.black)
         .font(Fonts.Inter.semiBold(size: 16.scale))
         .lineHeight(19.2.scale)
         .textAlignment(.center)
@@ -152,9 +152,14 @@ private extension DailyPicksCollectionCell {
         return view
     }
     
-    func makeTypeLabel() -> PaddingLabel {
-        let view = PaddingLabel()
-        view.backgroundColor = Appearance.secondary
+    func makeTypeLabel() -> GradientPaddingLabel {
+        let view = GradientPaddingLabel()
+        view.gradientLayer.colors = [
+            UIColor(integralRed: 255, green: 36, blue: 119).cgColor,
+            UIColor(integralRed: 233, green: 24, blue: 27).cgColor
+        ]
+        view.gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        view.gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
         view.layer.cornerRadius = 11.scale
         view.layer.masksToBounds = true
         view.insets = UIEdgeInsets(top: 4.scale, left: 8.scale, bottom: 4.scale, right: 8.scale)
@@ -181,10 +186,15 @@ private extension DailyPicksCollectionCell {
         return view
     }
     
-    func makeActionLabel() -> PaddingLabel {
-        let view = PaddingLabel()
-        view.backgroundColor = Appearance.primary
-        view.layer.cornerRadius = 8.scale
+    func makeActionLabel() -> GradientPaddingLabel {
+        let view = GradientPaddingLabel()
+        view.gradientLayer.colors = [
+            UIColor(integralRed: 6, green: 243, blue: 215).cgColor,
+            UIColor(integralRed: 10, green: 203, blue: 236).cgColor
+        ]
+        view.gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        view.gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
+        view.layer.cornerRadius = 16.scale
         view.layer.masksToBounds = true
         view.insets = UIEdgeInsets(top: 16.scale, left: 46.scale, bottom: 16.scale, right: 46.scale)
         view.translatesAutoresizingMaskIntoConstraints = false

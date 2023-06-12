@@ -211,16 +211,21 @@ private extension PaygateView {
         return view
     }
     
-    func makeContinueButton() -> UIButton {
+    func makeContinueButton() -> GradientButton {
         let attrs = TextAttributes()
-            .textColor(Appearance.white)
+            .textColor(Appearance.black)
             .font(Fonts.Inter.semiBold(size: 16.scale))
             .letterSpacing(-0.17.scale)
         
-        let view = UIButton()
+        let view = GradientButton()
+        view.gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        view.gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
+        view.gradientLayer.colors = [
+            UIColor(integralRed: 6, green: 243, blue: 215).cgColor,
+            UIColor(integralRed: 10, green: 203, blue: 236).cgColor
+        ]
+        view.layer.cornerRadius = 8.scale
         view.setAttributedTitle("Continue".localized.attributed(with: attrs), for: .normal)
-        view.backgroundColor = Appearance.primary
-        view.layer.cornerRadius = 16.scale
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

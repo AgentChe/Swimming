@@ -14,15 +14,14 @@ final class GetDrillTrainingResponse {
             let data = json["_data"] as? [String: Any],
             let id = data["drill_id"] as? Int,
             let name = data["name"] as? String,
-            let skillLevelId = data["level_id"] as? Int,
+//            let skillLevelId = data["level_id"] as? Int, // TODO
             let imagePath = data["image"] as? String,
             let imageUrl = URL(string: imagePath),
             let categoryId = data["drill_category_id"] as? Int,
             let explanation = data["explanation"] as? String,
             let instruction = data["description"] as? String,
             let customerDrillId = data["customer_drill_id"] as? Int,
-            let finished = data["finished"] as? Bool,
-            let trainedTime = data["trained_time"] as? Int
+            let finished = data["finished"] as? Bool
         else {
             return nil
         }
@@ -32,7 +31,7 @@ final class GetDrillTrainingResponse {
         let drill = Drill(
             id: id,
             name: name,
-            skillLevelId: skillLevelId,
+            skillLevelId: 23, // TODO
             image: imageUrl,
             categoryId: categoryId,
             paid: paid ?? false,
@@ -45,11 +44,13 @@ final class GetDrillTrainingResponse {
             scheduleDate = Date(timeIntervalSince1970: scheduleTimestamp)
         }
         
+        let trainedTime = data["trained_time"] as? Int
+        
         let assignedDrill = AssignedDrill(
             customerDrillId: customerDrillId,
             scheduleDate: scheduleDate,
             finished: finished,
-            trainedTime: trainedTime
+            trainedTime: trainedTime ?? 0
         )
         
         return DrillTraining(

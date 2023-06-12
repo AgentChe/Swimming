@@ -21,7 +21,6 @@
 		DEDFA9D32A32F97900268459 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEDFA9C92A32F97900268459 /* PlusJakartaSans-Bold.ttf */; };
 		DEDFA9D42A32F97900268459 /* PlusJakartaSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEDFA9CA2A32F97900268459 /* PlusJakartaSans-ExtraBold.ttf */; };
 		DEDFA9D82A32F97D00268459 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEDFA9D62A32F97D00268459 /* Localizable.strings */; };
-		DEDFA9DA2A32F98100268459 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEDFA9D92A32F98100268459 /* GoogleService-Info.plist */; };
 		DEDFABA32A32F98F00268459 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFA9DE2A32F98F00268459 /* UIApplication+Extension.swift */; };
 		DEDFABA42A32F98F00268459 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFA9DF2A32F98F00268459 /* UIDevice+Extension.swift */; };
 		DEDFABA52A32F98F00268459 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFA9E02A32F98F00268459 /* UIColor+Extension.swift */; };
@@ -317,10 +316,8 @@
 		DEDFACC72A32F99000268459 /* OGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB842A32F98F00268459 /* OGoalsView.swift */; };
 		DEDFACC82A32F99000268459 /* OCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB862A32F98F00268459 /* OCircleProgressView.swift */; };
 		DEDFACC92A32F99000268459 /* OFocusZoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB872A32F98F00268459 /* OFocusZoneButton.swift */; };
-		DEDFACCA2A32F99000268459 /* OPositionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB882A32F98F00268459 /* OPositionButton.swift */; };
 		DEDFACCB2A32F99000268459 /* ORoleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB892A32F98F00268459 /* ORoleButton.swift */; };
 		DEDFACCC2A32F99000268459 /* OGenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB8A2A32F98F00268459 /* OGenderButton.swift */; };
-		DEDFACCD2A32F99000268459 /* OWhereTrainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB8B2A32F98F00268459 /* OWhereTrainButton.swift */; };
 		DEDFACCE2A32F99000268459 /* OAgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB8C2A32F98F00268459 /* OAgeButton.swift */; };
 		DEDFACCF2A32F99000268459 /* ODayOfWeekButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB8D2A32F98F00268459 /* ODayOfWeekButton.swift */; };
 		DEDFACD02A32F99000268459 /* OGoalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB8E2A32F98F00268459 /* OGoalButton.swift */; };
@@ -328,11 +325,9 @@
 		DEDFACD22A32F99000268459 /* ODrillsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB912A32F98F00268459 /* ODrillsTableCell.swift */; };
 		DEDFACD32A32F99000268459 /* ODrillsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB922A32F98F00268459 /* ODrillsTableView.swift */; };
 		DEDFACD42A32F99000268459 /* OSkillLevelScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB932A32F98F00268459 /* OSkillLevelScoreView.swift */; };
-		DEDFACD52A32F99000268459 /* OPositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB942A32F98F00268459 /* OPositionView.swift */; };
 		DEDFACD62A32F99000268459 /* ORoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB952A32F98F00268459 /* ORoleView.swift */; };
 		DEDFACD72A32F99000268459 /* OWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB962A32F98F00268459 /* OWelcomeView.swift */; };
 		DEDFACD82A32F99000268459 /* OPreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB972A32F98F00268459 /* OPreloaderView.swift */; };
-		DEDFACD92A32F99000268459 /* OWhereTrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB982A32F98F00268459 /* OWhereTrainView.swift */; };
 		DEDFACDA2A32F99000268459 /* OSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB992A32F98F00268459 /* OSlideView.swift */; };
 		DEDFACDB2A32F99000268459 /* OGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB9A2A32F98F00268459 /* OGenderView.swift */; };
 		DEDFACDC2A32F99000268459 /* ODrillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFAB9B2A32F98F00268459 /* ODrillsView.swift */; };
@@ -343,6 +338,10 @@
 		DEDFACE12A32F99000268459 /* OWorkoutTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFABA02A32F98F00268459 /* OWorkoutTypeView.swift */; };
 		DEDFACE22A32F99000268459 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFABA12A32F98F00268459 /* OnboardingView.swift */; };
 		DEDFACE32A32F99000268459 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFABA22A32F98F00268459 /* OnboardingViewModel.swift */; };
+		DEDFACE52A330B5800268459 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFACE42A330B5800268459 /* GradientButton.swift */; };
+		DEDFACE72A370B1600268459 /* ODistanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFACE62A370B1600268459 /* ODistanceView.swift */; };
+		DEDFACE92A379C8A00268459 /* GradientPaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDFACE82A379C8A00268459 /* GradientPaddingLabel.swift */; };
+		DEDFACEB2A37A3C700268459 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEDFACEA2A37A3C700268459 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -364,7 +363,6 @@
 		DEDFA9C92A32F97900268459 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
 		DEDFA9CA2A32F97900268459 /* PlusJakartaSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		DEDFA9D72A32F97D00268459 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DEDFA9D92A32F98100268459 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEDFA9DE2A32F98F00268459 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		DEDFA9DF2A32F98F00268459 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		DEDFA9E02A32F98F00268459 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -660,10 +658,8 @@
 		DEDFAB842A32F98F00268459 /* OGoalsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OGoalsView.swift; sourceTree = "<group>"; };
 		DEDFAB862A32F98F00268459 /* OCircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCircleProgressView.swift; sourceTree = "<group>"; };
 		DEDFAB872A32F98F00268459 /* OFocusZoneButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFocusZoneButton.swift; sourceTree = "<group>"; };
-		DEDFAB882A32F98F00268459 /* OPositionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPositionButton.swift; sourceTree = "<group>"; };
 		DEDFAB892A32F98F00268459 /* ORoleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ORoleButton.swift; sourceTree = "<group>"; };
 		DEDFAB8A2A32F98F00268459 /* OGenderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OGenderButton.swift; sourceTree = "<group>"; };
-		DEDFAB8B2A32F98F00268459 /* OWhereTrainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWhereTrainButton.swift; sourceTree = "<group>"; };
 		DEDFAB8C2A32F98F00268459 /* OAgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAgeButton.swift; sourceTree = "<group>"; };
 		DEDFAB8D2A32F98F00268459 /* ODayOfWeekButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODayOfWeekButton.swift; sourceTree = "<group>"; };
 		DEDFAB8E2A32F98F00268459 /* OGoalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OGoalButton.swift; sourceTree = "<group>"; };
@@ -671,11 +667,9 @@
 		DEDFAB912A32F98F00268459 /* ODrillsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODrillsTableCell.swift; sourceTree = "<group>"; };
 		DEDFAB922A32F98F00268459 /* ODrillsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODrillsTableView.swift; sourceTree = "<group>"; };
 		DEDFAB932A32F98F00268459 /* OSkillLevelScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSkillLevelScoreView.swift; sourceTree = "<group>"; };
-		DEDFAB942A32F98F00268459 /* OPositionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPositionView.swift; sourceTree = "<group>"; };
 		DEDFAB952A32F98F00268459 /* ORoleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ORoleView.swift; sourceTree = "<group>"; };
 		DEDFAB962A32F98F00268459 /* OWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWelcomeView.swift; sourceTree = "<group>"; };
 		DEDFAB972A32F98F00268459 /* OPreloaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPreloaderView.swift; sourceTree = "<group>"; };
-		DEDFAB982A32F98F00268459 /* OWhereTrainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWhereTrainView.swift; sourceTree = "<group>"; };
 		DEDFAB992A32F98F00268459 /* OSlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSlideView.swift; sourceTree = "<group>"; };
 		DEDFAB9A2A32F98F00268459 /* OGenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OGenderView.swift; sourceTree = "<group>"; };
 		DEDFAB9B2A32F98F00268459 /* ODrillsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODrillsView.swift; sourceTree = "<group>"; };
@@ -686,6 +680,10 @@
 		DEDFABA02A32F98F00268459 /* OWorkoutTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWorkoutTypeView.swift; sourceTree = "<group>"; };
 		DEDFABA12A32F98F00268459 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		DEDFABA22A32F98F00268459 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		DEDFACE42A330B5800268459 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		DEDFACE62A370B1600268459 /* ODistanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODistanceView.swift; sourceTree = "<group>"; };
+		DEDFACE82A379C8A00268459 /* GradientPaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientPaddingLabel.swift; sourceTree = "<group>"; };
+		DEDFACEA2A37A3C700268459 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -750,7 +748,7 @@
 				DEDFA9D52A32F97D00268459 /* Strings */,
 				DEDFA9BE2A32F97900268459 /* Fonts */,
 				DEDFA9B72A32F89700268459 /* Info.plist */,
-				DEDFA9D92A32F98100268459 /* GoogleService-Info.plist */,
+				DEDFACEA2A37A3C700268459 /* GoogleService-Info.plist */,
 				DEDFA9B42A32F89700268459 /* LaunchScreen.storyboard */,
 				DEDFA9B22A32F89700268459 /* Assets.xcassets */,
 			);
@@ -907,6 +905,8 @@
 				DEDFAA062A32F98F00268459 /* PaddingLabel.swift */,
 				DEDFAA072A32F98F00268459 /* CircleView.swift */,
 				DEDFAA082A32F98F00268459 /* GradientView.swift */,
+				DEDFACE42A330B5800268459 /* GradientButton.swift */,
+				DEDFACE82A379C8A00268459 /* GradientPaddingLabel.swift */,
 				DEDFAA092A32F98F00268459 /* CircleProgressView.swift */,
 			);
 			path = CustomViews;
@@ -2152,20 +2152,19 @@
 			isa = PBXGroup;
 			children = (
 				DEDFAB852A32F98F00268459 /* Atoms */,
-				DEDFAB842A32F98F00268459 /* OGoalsView.swift */,
-				DEDFAB942A32F98F00268459 /* OPositionView.swift */,
-				DEDFAB952A32F98F00268459 /* ORoleView.swift */,
-				DEDFAB962A32F98F00268459 /* OWelcomeView.swift */,
-				DEDFAB972A32F98F00268459 /* OPreloaderView.swift */,
-				DEDFAB982A32F98F00268459 /* OWhereTrainView.swift */,
 				DEDFAB992A32F98F00268459 /* OSlideView.swift */,
+				DEDFAB962A32F98F00268459 /* OWelcomeView.swift */,
 				DEDFAB9A2A32F98F00268459 /* OGenderView.swift */,
-				DEDFAB9B2A32F98F00268459 /* ODrillsView.swift */,
-				DEDFAB9C2A32F98F00268459 /* OSkillLevelView.swift */,
-				DEDFAB9D2A32F98F00268459 /* ODaysOfWeekView.swift */,
-				DEDFAB9E2A32F98F00268459 /* OFocusZoneView.swift */,
 				DEDFAB9F2A32F98F00268459 /* OAgeView.swift */,
+				DEDFAB952A32F98F00268459 /* ORoleView.swift */,
+				DEDFAB9C2A32F98F00268459 /* OSkillLevelView.swift */,
+				DEDFAB842A32F98F00268459 /* OGoalsView.swift */,
+				DEDFAB9D2A32F98F00268459 /* ODaysOfWeekView.swift */,
+				DEDFACE62A370B1600268459 /* ODistanceView.swift */,
+				DEDFAB9B2A32F98F00268459 /* ODrillsView.swift */,
 				DEDFABA02A32F98F00268459 /* OWorkoutTypeView.swift */,
+				DEDFAB9E2A32F98F00268459 /* OFocusZoneView.swift */,
+				DEDFAB972A32F98F00268459 /* OPreloaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2176,10 +2175,8 @@
 				DEDFAB8F2A32F98F00268459 /* Drills */,
 				DEDFAB862A32F98F00268459 /* OCircleProgressView.swift */,
 				DEDFAB872A32F98F00268459 /* OFocusZoneButton.swift */,
-				DEDFAB882A32F98F00268459 /* OPositionButton.swift */,
 				DEDFAB892A32F98F00268459 /* ORoleButton.swift */,
 				DEDFAB8A2A32F98F00268459 /* OGenderButton.swift */,
-				DEDFAB8B2A32F98F00268459 /* OWhereTrainButton.swift */,
 				DEDFAB8C2A32F98F00268459 /* OAgeButton.swift */,
 				DEDFAB8D2A32F98F00268459 /* ODayOfWeekButton.swift */,
 				DEDFAB8E2A32F98F00268459 /* OGoalButton.swift */,
@@ -2271,7 +2268,7 @@
 				DEDFA9CC2A32F97900268459 /* Inter-Bold.ttf in Resources */,
 				DEDFA9CB2A32F97900268459 /* Inter-Medium.ttf in Resources */,
 				DEDFA9CF2A32F97900268459 /* Inter-SemiBold.ttf in Resources */,
-				DEDFA9DA2A32F98100268459 /* GoogleService-Info.plist in Resources */,
+				DEDFACEB2A37A3C700268459 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2391,7 +2388,6 @@
 				DEDFABE72A32F98F00268459 /* Paygate.swift in Sources */,
 				DEDFAC862A32F99000268459 /* DrillTrainingMenuView.swift in Sources */,
 				DEDFABA52A32F98F00268459 /* UIColor+Extension.swift in Sources */,
-				DEDFACD92A32F99000268459 /* OWhereTrainView.swift in Sources */,
 				DEDFACAF2A32F99000268459 /* TrainViewController.swift in Sources */,
 				DEDFABDE2A32F98F00268459 /* GetDrillsResponse.swift in Sources */,
 				DEDFAC112A32F98F00268459 /* WorkoutExercise.swift in Sources */,
@@ -2406,7 +2402,6 @@
 				DEDFACDF2A32F99000268459 /* OFocusZoneView.swift in Sources */,
 				DEDFAC5B2A32F99000268459 /* WorkoutTrainingLifeCyrcle.swift in Sources */,
 				DEDFABD52A32F98F00268459 /* DrillCategory.swift in Sources */,
-				DEDFACCA2A32F99000268459 /* OPositionButton.swift in Sources */,
 				DEDFABA92A32F98F00268459 /* String+Extension.swift in Sources */,
 				DEDFABEA2A32F98F00268459 /* PaygateManager.swift in Sources */,
 				DEDFABD92A32F98F00268459 /* GetDrillTrainingResponse.swift in Sources */,
@@ -2419,6 +2414,7 @@
 				DEDFABBC2A32F98F00268459 /* RxActivityIndicator.swift in Sources */,
 				DEDFAC7E2A32F99000268459 /* DrillTrainingViewController.swift in Sources */,
 				DEDFACC22A32F99000268459 /* DrillsView.swift in Sources */,
+				DEDFACE72A370B1600268459 /* ODistanceView.swift in Sources */,
 				DEDFABEC2A32F98F00268459 /* PlanManager.swift in Sources */,
 				DEDFACC32A32F99000268459 /* TryAgainView.swift in Sources */,
 				DEDFAC5E2A32F99000268459 /* WorkoutTrainingCollectionView.swift in Sources */,
@@ -2447,13 +2443,13 @@
 				DEDFAC372A32F98F00268459 /* HomeDrillCategoriesCell.swift in Sources */,
 				DEDFAC062A32F98F00268459 /* ProfileMediator.swift in Sources */,
 				DEDFACD72A32F99000268459 /* OWelcomeView.swift in Sources */,
+				DEDFACE92A379C8A00268459 /* GradientPaddingLabel.swift in Sources */,
 				DEDFAC782A32F99000268459 /* ExerciseInstructionViewModel.swift in Sources */,
 				DEDFABF22A32F98F00268459 /* GetPlanResponse.swift in Sources */,
 				DEDFACB32A32F99000268459 /* TrainTitleCell.swift in Sources */,
 				DEDFAC502A32F99000268459 /* PaygateViewControllerDelegate.swift in Sources */,
 				DEDFACB52A32F99000268459 /* TrainTableView.swift in Sources */,
 				DEDFACAB2A32F99000268459 /* TrainInfoViewController.swift in Sources */,
-				DEDFACCD2A32F99000268459 /* OWhereTrainButton.swift in Sources */,
 				DEDFAC312A32F98F00268459 /* PlanWeekdaysCell.swift in Sources */,
 				DEDFAC4B2A32F99000268459 /* CalendarViewModel.swift in Sources */,
 				DEDFABF52A32F98F00268459 /* HomeKit.swift in Sources */,
@@ -2483,7 +2479,6 @@
 				DEDFACBD2A32F99000268459 /* DrillsViewModel.swift in Sources */,
 				DEDFABCD2A32F98F00268459 /* Appearance.swift in Sources */,
 				DEDFAC3F2A32F99000268459 /* HomeTableElement.swift in Sources */,
-				DEDFACD52A32F99000268459 /* OPositionView.swift in Sources */,
 				DEDFACBE2A32F99000268459 /* DrillsViewController.swift in Sources */,
 				DEDFACB12A32F99000268459 /* TrainTrainingCell.swift in Sources */,
 				DEDFAC8A2A32F99000268459 /* DTIDescriptionCell.swift in Sources */,
@@ -2583,6 +2578,7 @@
 				DEDFACBB2A32F99000268459 /* TabView.swift in Sources */,
 				DEDFAC6A2A32F99000268459 /* WorkoutTemplateHeaderCell.swift in Sources */,
 				DEDFAC822A32F99000268459 /* DrillTrainingLifeCyrcle.swift in Sources */,
+				DEDFACE52A330B5800268459 /* GradientButton.swift in Sources */,
 				DEDFABC62A32F98F00268459 /* GradientView.swift in Sources */,
 				DEDFAC1A2A32F98F00268459 /* LogWorkoutProgressRequest.swift in Sources */,
 				DEDFAC552A32F99000268459 /* PaygateInfoCell.swift in Sources */,

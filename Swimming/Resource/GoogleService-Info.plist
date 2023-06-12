@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>756262953707-6fagbp1a0b8a9m192hj3njulb7tsb04k.apps.googleusercontent.com</string>
+	<string>536528592122-24idcbtoqiq930gamtu6bnjc8qh9bg6t.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.756262953707-6fagbp1a0b8a9m192hj3njulb7tsb04k</string>
+	<string>com.googleusercontent.apps.536528592122-24idcbtoqiq930gamtu6bnjc8qh9bg6t</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAI4wVF5387Xjq_QgUwx940-NCplnSFmF4</string>
+	<string>AIzaSyAf_fCZ1XfxHoh5XcWT9hwemAXqbXhTR8c</string>
 	<key>GCM_SENDER_ID</key>
-	<string>756262953707</string>
+	<string>536528592122</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>training.app.soccer</string>
+	<string>training.app.swimming</string>
 	<key>PROJECT_ID</key>
-	<string>soccer-ad8b1</string>
+	<string>swimming-7f087</string>
 	<key>STORAGE_BUCKET</key>
-	<string>soccer-ad8b1.appspot.com</string>
+	<string>swimming-7f087.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:756262953707:ios:968abc9cf3ce5f27ce94ae</string>
+	<string>1:536528592122:ios:a9278907b8e1b3397afd43</string>
 </dict>
 </plist>

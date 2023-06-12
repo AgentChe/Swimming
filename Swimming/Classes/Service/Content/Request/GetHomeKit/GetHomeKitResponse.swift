@@ -17,15 +17,16 @@ final class GetHomeKitResponse {
             let dailyPicks = data["daily_picks"] as? [String: Any],
             let dailyDrillsArray = dailyPicks["drills"] as? [[String: Any]],
             let dailyWorkoutsArray = dailyPicks["workouts"] as? [[String: Any]],
-            let planJSON = data["plan"] as? [String: [String: Any]],
             let tryDrillsArray = data["try_drills"] as? [[String: Any]]
         else {
             return nil
         }
         
+        let planJSON = data["plan"] as? [String: [String: Any]]
+        
         let dailyDrills = map(drillsArray: dailyDrillsArray)
         let dailyWorkouts = map(dailyWorkoutsArray: dailyWorkoutsArray)
-        let plan = GetPlanResponse.map(planJSON: planJSON)
+        let plan = GetPlanResponse.map(planJSON: planJSON ?? [:])
         let tryDrills = map(drillsArray: tryDrillsArray)
         
         return HomeKit(

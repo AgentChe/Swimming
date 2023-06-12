@@ -136,16 +136,21 @@ private extension CalendarView {
         return view
     }
     
-    func makeAddButton() -> UIButton {
+    func makeAddButton() -> GradientButton {
         let attrs = TextAttributes()
-            .textColor(Appearance.white)
+            .textColor(Appearance.black)
             .font(Fonts.Inter.semiBold(size: 16.scale))
             .lineHeight(19.scale)
         
-        let view = UIButton()
+        let view = GradientButton()
+        view.gradientLayer.colors = [
+            UIColor(integralRed: 6, green: 243, blue: 215).cgColor,
+            UIColor(integralRed: 10, green: 203, blue: 236).cgColor
+        ]
+        view.gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        view.gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
         view.setAttributedTitle("Calendar.Add".localized.attributed(with: attrs), for: .normal)
         view.layer.cornerRadius = 8.scale
-        view.backgroundColor = Appearance.primary
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

@@ -9,7 +9,7 @@ import UIKit
 
 final class OnboardingView: UIView {
     enum Step: Int {
-        case welcome, gender, age, role, skillLevel, goals, daysOfWeek, whereTrain, drills, position, workoutType, focusZone, preloader
+        case welcome, gender, age, role, skillLevel, goals, daysOfWeek, distance, drills, workoutType, focusZone, preloader
     }
     
     var didFinish: (() -> Void)?
@@ -30,9 +30,8 @@ final class OnboardingView: UIView {
             skillLevelView,
             OGoalsView(step: .goals),
             daysOfWeekView,
-            OWhereTrainView(step: .whereTrain),
+            ODistanceView(step: .distance),
             drillsView,
-            OPositionView(step: .position),
             OWorkoutTypeView(step: .workoutType),
             focusZoneView,
             preloaderView

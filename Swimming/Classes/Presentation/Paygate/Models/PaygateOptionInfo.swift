@@ -47,17 +47,24 @@ private extension PaygateOptionInfo {
                     let priceResult = price.priceValue / Double(priceDiv)
                     
                     let priceResultLocalized: String
-                    if priceResult < 100 {
-                        formatter.maximumFractionDigits = 1
-                        priceResultLocalized = formatter.string(from: NSNumber(value: (priceResult * 10).rounded() / 10)) ?? ""
+                    
+                    if priceDiv == 1 {
+                        priceResultLocalized = price.priceLocalized
                     } else {
-                        formatter.maximumFractionDigits = 0
-                        priceResultLocalized = formatter.string(from: NSNumber(value: round(priceResult))) ?? ""
+                        if priceResult < 100 {
+                            formatter.maximumFractionDigits = 2
+                        } else if priceResult < 1000 {
+                            formatter.maximumFractionDigits = 1
+                        } else {
+                            formatter.maximumFractionDigits = 0
+                        }
+                        
+                        priceResultLocalized = formatter.string(from: NSNumber(value: priceResult)) ?? ""
                     }
+                    
                     return priceResultLocalized
                         .removingWhitespaces()
                         .attributed(with: attrs)
-                    
                 case .promo(let promo):
                     return promo.attributed(with: attrs)
                 }
@@ -83,6 +90,7 @@ private extension PaygateOptionInfo {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.locale = locale
+        formatter.roundingMode = .down
         return formatter
     }
 }

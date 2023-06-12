@@ -2,12 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1641827802992595</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>swimmingapp</string>
+			</array>
+		</dict>
+	</array>
 	<key>FacebookAppID</key>
-	<string></string>
+	<string>1641827802992595</string>
 	<key>FacebookClientToken</key>
-	<string></string>
+	<string>b4fe489e6fc6f9a181d61b8d4f11fc22</string>
 	<key>FacebookDisplayName</key>
-	<string></string>
+	<string>Swimming</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>PlusJakartaSans-SemiBold.ttf</string>
@@ -40,6 +59,6 @@
 		</dict>
 	</dict>
 	<key>branch_key</key>
-	<string></string>
+	<string>key_live_gycpHCH8g3vu4y9lUrtrTgejtCjaPfiC</string>
 </dict>
 </plist>

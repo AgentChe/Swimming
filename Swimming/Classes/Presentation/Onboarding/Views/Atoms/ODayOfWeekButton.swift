@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ODayOfWeekButton: UIButton {
+final class ODayOfWeekButton: GradientButton {
     lazy var marked = false {
         didSet {
             update()
@@ -44,7 +44,17 @@ private extension ODayOfWeekButton {
         layer.borderWidth = marked ? 0 : 1.scale
         layer.borderColor = marked ? UIColor.clear.cgColor : Appearance.white.withAlphaComponent(0.1).cgColor
         
-        backgroundColor = marked ? Appearance.secondary : Appearance.black
+        let markedColors = [
+            UIColor(integralRed: 114, green: 131, blue: 255).cgColor,
+            UIColor(integralRed: 36, green: 62, blue: 227).cgColor
+        ]
+        let unmarkedColors = [
+            Appearance.black.cgColor,
+            Appearance.black.cgColor
+        ]
+        gradientLayer.colors = marked ? markedColors : unmarkedColors
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
     }
     
     var text: String {

@@ -85,9 +85,9 @@ private extension HomeStatsCell {
     func makeContainer() -> UIView {
         let view = UIView()
         view.layer.cornerRadius = 8.scale
-        view.layer.borderColor = UIColor(integralRed: 75, green: 166, blue: 123).cgColor
+        view.layer.borderColor = Appearance.primary.cgColor
         view.layer.borderWidth = 1.scale
-        view.backgroundColor = UIColor(integralRed: 75, green: 166, blue: 123, alpha: 0.1)
+        view.backgroundColor = UIColor(integralRed: 6, green: 241, blue: 216, alpha: 0.1)
         view.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(view)
         return view

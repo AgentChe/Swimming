@@ -13,8 +13,7 @@ final class AssignDrillResponse {
             let json = response as? [String: Any],
             let data = json["_data"] as? [String: Any],
             let customerDrillId = data["customer_drill_id"] as? Int,
-            let finished = data["finished"] as? Bool,
-            let trainedTime = data["trained_time"] as? Int
+            let finished = data["finished"] as? Bool
         else {
             return nil
         }
@@ -24,11 +23,13 @@ final class AssignDrillResponse {
             scheduleDate = Date(timeIntervalSince1970: scheduleTimestamp)
         }
         
+        let trainedTime = data["trained_time"] as? Int
+        
         return AssignedDrill(
             customerDrillId: customerDrillId,
             scheduleDate: scheduleDate,
             finished: finished,
-            trainedTime: trainedTime
+            trainedTime: trainedTime ?? 0
         )
     }
 }

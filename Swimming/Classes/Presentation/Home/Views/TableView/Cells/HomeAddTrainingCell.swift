@@ -46,17 +46,22 @@ private extension HomeAddTrainingCell {
 
 // MARK: Lazy initialization
 private extension HomeAddTrainingCell {
-    func makeButton() -> UIButton {
+    func makeButton() -> GradientButton {
         let attrs = TextAttributes()
-            .textColor(Appearance.white)
+            .textColor(Appearance.black)
             .font(Fonts.Inter.semiBold(size: 16.scale))
             .lineHeight(19.2.scale)
         
-        let view = UIButton()
+        let view = GradientButton()
+        view.gradientLayer.colors = [
+            UIColor(integralRed: 6, green: 243, blue: 215).cgColor,
+            UIColor(integralRed: 10, green: 203, blue: 236).cgColor
+        ]
+        view.gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        view.gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
         view.setAttributedTitle("Home.AddTraining".localized.attributed(with: attrs), for: .normal)
         view.layer.cornerRadius = 8.scale
         view.isUserInteractionEnabled = false
-        view.backgroundColor = UIColor(integralRed: 251, green: 18, blue: 2)
         view.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(view)
         return view
