@@ -25,14 +25,15 @@ final class GetPlanResponse {
             guard
                 let day = TimeInterval(day),
                 let statusCode = planJSON["status"] as? Int,
-                let status = Self.status(from: statusCode),
-                let drillsArray = planJSON["drills"] as? [[String: Any]],
-                let workoutArray = planJSON["workouts"] as? [[String: Any]]
+                let status = Self.status(from: statusCode)
             else {
                 return nil
             }
             
-            let drills = drillsArray.compactMap { drillJSON -> PlanDrill? in
+            let drillsArray = planJSON["drills"] as? [[String: Any]]
+            let workoutArray = planJSON["workouts"] as? [[String: Any]]
+            
+            let drills = (drillsArray ?? []).compactMap { drillJSON -> PlanDrill? in
                 guard
                     let customerDrillId = drillJSON["customer_drill_id"] as? Int,
                     let name = drillJSON["name"] as? String,
@@ -56,7 +57,7 @@ final class GetPlanResponse {
                 )
             }
             
-            let workouts = workoutArray.compactMap { workoutJSON -> PlanWorkout? in
+            let workouts = (workoutArray ?? []).compactMap { workoutJSON -> PlanWorkout? in
                 guard
                     let customerWorkoutId = workoutJSON["customer_workout_id"] as? Int,
                     let name = workoutJSON["name"] as? String,

@@ -62,27 +62,13 @@ private extension WorkoutTemplateViewModel {
                 didTapCalendar.map { _ in .calendar },
                 didTapStartTraining.map { _ in .training }
             )
-            .withLatestFrom(source) { ($0, $1) }
+            .withLatestFrom(template) { ($0, $1) }
             .withUnretained(self)
             .flatMapLatest { base, args -> Driver<Route> in
-                let (action, input) = args
-                
-                let id: Int
-                switch input {
-                case let .plan(workout):
-                    return .just(.training(customerWorkoutId: workout.customerWorkoutId))
-                case let .cover(workout):
-                    id = workout.id
-                case let .focusZone(workout):
-                    id = workout.id
-                case let .step(workout):
-                    id = workout.id
-                case let .template(workout):
-                    id = workout.id
-                }
+                let (action, template) = args
                 
                 func source() -> Single<Route> {
-                    base.workoutManager.assignWorkout(id: id)
+                    base.workoutManager.assignWorkout(id: template.id)
                         .map { assignedWorkout -> Route in
                             guard let assignedWorkout else {
                                 throw ContentError(.notContent)
@@ -94,8 +80,6 @@ private extension WorkoutTemplateViewModel {
                             case .calendar:
                                 return .calendar(customerWorkoutId: assignedWorkout.customerWorkoutId)
                             }
-                            
-                            
                         }
                 }
                 
@@ -117,6 +101,7 @@ private extension WorkoutTemplateViewModel {
             }
             .asDriver(onErrorDriveWith: .never())
     }
+    
     func makeElements() -> Driver<[WorkoutTemplateTableElement]> {
         Driver
             .combineLatest(

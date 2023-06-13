@@ -13,8 +13,7 @@ final class AssignWorkoutResponse {
             let json = response as? [String: Any],
             let data = json["_data"] as? [String: Any],
             let customerWorkoutId = data["customer_workout_id"] as? Int,
-            let finished = data["finished"] as? Bool,
-            let trainedTime = data["trained_time"] as? Int
+            let finished = data["finished"] as? Bool
         else {
             return nil
         }
@@ -24,11 +23,13 @@ final class AssignWorkoutResponse {
             scheduleDate = Date(timeIntervalSince1970: scheduleTimestamp)
         }
         
+        let trainedTime = data["trained_time"] as? Int
+        
         return AssignedWorkout(
             customerWorkoutId: customerWorkoutId,
             scheduleDate: scheduleDate,
             finished: finished,
-            trainedTime: trainedTime
+            trainedTime: trainedTime ?? 0
         )
     }
 }
