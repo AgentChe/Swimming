@@ -14,7 +14,7 @@ final class GetDrillTrainingResponse {
             let data = json["_data"] as? [String: Any],
             let id = data["drill_id"] as? Int,
             let name = data["name"] as? String,
-//            let skillLevelId = data["level_id"] as? Int, // TODO
+            let skillLevelId = data["level_id"] as? Int,
             let imagePath = data["image"] as? String,
             let imageUrl = URL(string: imagePath),
             let categoryId = data["drill_category_id"] as? Int,
@@ -31,7 +31,7 @@ final class GetDrillTrainingResponse {
         let drill = Drill(
             id: id,
             name: name,
-            skillLevelId: 23, // TODO
+            skillLevelId: skillLevelId,
             image: imageUrl,
             categoryId: categoryId,
             paid: paid ?? false,

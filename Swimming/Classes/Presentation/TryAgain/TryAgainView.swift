@@ -54,8 +54,8 @@ private extension TryAgainView {
 private extension TryAgainView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 154.scale),
-            imageView.heightAnchor.constraint(equalToConstant: 161.scale),
+            imageView.widthAnchor.constraint(equalToConstant: 143.23.scale),
+            imageView.heightAnchor.constraint(equalToConstant: 215.71.scale),
             imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             imageView.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 120.scale : 50.scale)
         ])
@@ -102,8 +102,8 @@ private extension TryAgainView {
     func makeTitleLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Appearance.white)
-            .font(Fonts.Inter.bold(size: 24.scale))
-            .lineHeight(28.scale)
+            .font(Fonts.Inter.bold(size: 20.scale))
+            .lineHeight(24.scale)
             .letterSpacing(-0.3.scale)
             .textAlignment(.center)
         
@@ -118,8 +118,8 @@ private extension TryAgainView {
     func makeSubTitleLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Appearance.white)
-            .font(Fonts.Inter.regular(size: 17.scale))
-            .lineHeight(27.2.scale)
+            .font(Fonts.Inter.regular(size: 16.scale))
+            .lineHeight(25.6.scale)
             .letterSpacing(-0.41.scale)
             .textAlignment(.center)
         
@@ -131,15 +131,20 @@ private extension TryAgainView {
         return view
     }
     
-    func makeButton() -> UIButton {
+    func makeButton() -> GradientButton {
         let attrs = TextAttributes()
-            .textColor(Appearance.white)
+            .textColor(Appearance.black)
             .font(Fonts.Inter.semiBold(size: 16.scale))
         
-        let view = UIButton()
+        let view = GradientButton()
+        view.gradientLayer.colors = [
+            UIColor(integralRed: 6, green: 243, blue: 215).cgColor,
+            UIColor(integralRed: 10, green: 203, blue: 236).cgColor
+        ]
+        view.gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        view.gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
         view.setAttributedTitle("TryAgain.Button".localized.attributed(with: attrs), for: .normal)
         view.layer.cornerRadius = 8.scale
-        view.backgroundColor = Appearance.primary
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
