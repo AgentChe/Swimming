@@ -55,7 +55,7 @@ extension ProfileManager: ProfileManagerProtocol {
             ].compactMap { $0 }
         }
         
-        let timezone = TimeZone.current.secondsFromGMT()
+        let timezone = TimeZone.current.identifier
         
         let request = SetRequest(
             userToken: userToken,
@@ -63,7 +63,7 @@ extension ProfileManager: ProfileManagerProtocol {
             weekSchedule: weekScheduleDays,
             drills: drillsIds,
             focusZones: focusZonesIds,
-            timezone: String(timezone),
+            timezone: timezone,
             gender: gender?.code
         )
         
