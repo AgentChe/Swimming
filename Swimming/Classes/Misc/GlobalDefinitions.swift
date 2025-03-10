@@ -12,11 +12,8 @@ final class GlobalDefinitions {
     static let otterScaleHost = "https://api.korrekted.com"
     static let otterScaleApiKey = "0fNghzpLmJbbiLQd"
     
-    static let appleAppID = "6450157950"
-    
     static let applicationTag = "SWIMMING"
-    static let amplitudeApiKey = "0d810afcbd45c0b58a5ed6cd272acfa"
-    static let appsFlyerApiKey = "DCciCfYXjMQ8QnkdCg8qzk"
+    static let amplitudeApiKey = "ad1acf62a1718340f0958c15b7b9dcfc"
     
     static let termsOfServiceUrl = "https://kyotosaka.com/terms.html"
     static let privacyPolicyUrl = "https://kyotosaka.com/policy.html"

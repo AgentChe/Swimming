@@ -19,10 +19,8 @@ target 'Swimming' do
   
   pod 'FBSDKCoreKit'
   pod 'Amplitude-iOS'
-  pod 'Branch'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
-  pod 'AppsFlyerFramework'
   pod 'JTAppleCalendar'
 end
 
