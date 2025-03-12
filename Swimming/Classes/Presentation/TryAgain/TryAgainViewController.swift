@@ -59,7 +59,7 @@ final class TryAgainViewController: UIViewController {
                     return
                 }
                 
-                UIApplication.shared.open(url, options: [:])
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
             })
             .disposed(by: disposeBag)
     }
